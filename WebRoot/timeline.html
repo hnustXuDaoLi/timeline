@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Java开发QQ空间时光轴大数据系统</title>
+
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="this is my page">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<style type="text/css">
+	*{margin:0;padding:0;}
+	img{border:0;}
+	body{background:url("images/bg.jpg") top center;font-size:12px;font-family:"微软雅黑";color:#666;}
+	/*timeline start*/
+	.timeline{width:1100px;height:900px;margin:0 auto;position:relative;}
+	.timeline .t_line{width:5px;height:1500px;background:#ccc;position:absolute;top:66px;left:200px;}
+	/*t_send start*/
+	.timeline .t_send{width:700px;margin:60px 0 0 169px;}
+	.timeline .t_send .t_header img{border-radius:33px;}
+	.timeline .t_send .t_header{float:left;}
+	.timeline .t_send .t_sj{width:13px;height:16px;background:url("images/sanjiao.jpg") no-repeat;float:left;margin:23px 0 0 12px;}
+	.timeline .t_send .t_msg{width:600px;height:165px;background:#fff;float:left;border-radius:3px;position:relative;}
+	.clear{clear:both;}
+	.timeline .t_send .t_msg .title{font-size:14px;padding:10px 0 15px 20px;}
+	.timeline .t_send .t_msg .t_message{width:540px;height:50px;border:1px solid #d1d1d1;margin:0 auto;padding:10px;outline:none;}
+	.timeline .t_send .t_msg .t_face{width:600px;height:400px;}
+	.timeline .t_send .t_msg .t_face .t_box{float:left;margin:15px 0 0 12px;}
+	.timeline .t_send .t_msg .t_face .t_btn{width:80px;height:30px;background:#F90;display:block;float:right;
+	margin:10px 20px 0 0;text-align:center;line-height:30px;text-decoration:none;font-size:14px;color:#fff;font-weight:bold;border-radius:3px;}
+	.timeline .t_send .t_msg .t_face .t_btn:hover{background:#F30;}
+	.timeline .t_send .t_msg .t_qqface{width:340px;height:180px;border:1px solid #F2F2F2;background:#fff;position:absolute;top:155px;left:20px;
+	box-shadow:1px 1px 10px 0px #000;padding:5px;display:none;}
+	.timeline .t_send .t_msg .t_qqface ul li{list-style:none;float:left;margin:2px;cursor:pointer;}
+	/*end t_send*/
+	/*t_all start*/
+	.timeline .t_all{width:1100px;position:relative;}
+	.timeline .t_all .t_list{margin:70px 0 0 170px;float:left;}
+	.timeline .t_all .t_list .l_header{float:left;}
+	.timeline .t_all .t_list .l_header img{border-radius:33px;}
+	.timeline .t_all .t_list .l_sj{width:13px;height:16px;background:url("images/sanjiao.jpg") no-repeat;float:left;margin:23px 0 0 12px;}
+	.timeline .t_all .t_list .l_mes{width:500px;height:100px;background:#fff;float:left;border-radius:3px;
+	line-height:100px;text-align:center;font-size:16px;}
+	/*end t_all*/
+	/*end timeline*/
+</style>
+</head>
+
+<body>
+	<!-- timeline start -->
+	<div class="timeline">
+		<div class="t_line"></div>
+		<!-- t_send start -->
+		<div class="t_send">
+		
+			<div class="t_header">
+				<img src="images/1.jpg" alt="头像" width="66" height="66">
+			</div>
+			
+			<div class="t_sj"></div>
+			
+			<div class="t_msg">
+				<p class="title">有什么新鲜事要告诉大家？</p>
+				<div class="t_message" contenteditable="true"></div>
+				<p class="t_face">
+					<a href="#" class="t_box">
+						<img src="images/face/10.jpg" alt="表情" width="44" height="22">
+					</a>
+					<a href="#" class="t_btn">发 表</a>
+				</p>
+				
+				<div class="t_qqface">
+					<ul id="t_ul">
+						<li><img src="images/face/1.gif" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/2.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/3.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/4.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/5.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/6.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/7.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/8.gif" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/9.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/10.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/11.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/12.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/13.gif" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/14.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/15.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/16.gif" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/17.gif" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/18.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/19.jpg" alt="表情" width="44" height="22"></li>
+						<li><img src="images/face/20.jpg" alt="表情" width="44" height="22"></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!-- end t_send -->
+		<!-- t_all start -->
+		<div class="t_all">
+			<div class="t_list">
+				<div class="l_header">
+					<img src="images/1.jpg" alt="头像" width="66" height="66">
+				</div>
+				<div class="l_sj"></div>
+				<div class="l_mes">太棒了！~</div>
+			</div>
+			
+			<div class="t_list">
+				<div class="l_header">
+					<img src="images/1.jpg" alt="头像" width="66" height="66">
+				</div>
+				<div class="l_sj"></div>
+				<div class="l_mes">太棒了！~</div>
+			</div>
+			
+			<div class="t_list">
+				<div class="l_header">
+					<img src="images/1.jpg" alt="头像" width="66" height="66">
+				</div>
+				<div class="l_sj"></div>
+				<div class="l_mes">太棒了！~</div>
+			</div>
+			
+			<div class="t_list">
+				<div class="l_header">
+					<img src="images/1.jpg" alt="头像" width="66" height="66">
+				</div>
+				<div class="l_sj"></div>
+				<div class="l_mes">太棒了！~</div>
+			</div>
+		</div>
+		<!-- end t_all -->
+	</div>
+	<!-- end timeline -->
+	
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		//点击显示表情
+		$(".t_box").click(function(){
+			$(".t_qqface").toggle();
+		});
+		//选中表情添加到文本框
+		$("#t_ul").find("li").click(function(){
+			var img = $(this).find("img").clone();
+			$(".t_message").append(img);
+		});
+		//点击发布
+		$(".t_btn").click(function(){
+			var text = $(".t_message").text();
+			if(text == ""){
+				$(".t_message").focus();
+				return;
+			}
+			$(".t_all").prepend("<div class='t_list'>"+"<div class='l_header'>"+
+					"<img src='images/1.jpg' alt='头像' width='66' height='66'>"+
+					"</div><div class='l_sj'></div><div class='l_mes'>"+
+					$('.t_message').html()+"</div></div>");
+		});
+	});
+</script>
+</body>
+</html>
